@@ -1,0 +1,34 @@
+{
+  "name": "footable",
+  "description": "FooTable is a jQuery plugin that aims to make HTML tables on smaller devices look awesome.",
+  "version": "3.0.1",
+  "main": "src/js/FooTable.js",
+  "authors": [
+    "FooPlugins <http://fooplugins.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jquery",
+    "table",
+    "responsive"
+  ],
+  "homepage": "http://fooplugins.com",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "3.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v3.0.1",
+    "commit": "6cfe5fcc8e5a690b9758201011ba8c4d5fd563b1"
+  },
+  "_source": "https://github.com/madeinussr/FooTable.git",
+  "_target": "~3.0.1",
+  "_originalSource": "https://github.com/madeinussr/FooTable.git",
+  "_direct": true
+}
