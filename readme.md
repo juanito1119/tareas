@@ -6,22 +6,36 @@
 [![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+Bienvenidos al primer curso de php basado en [Laravel 5.2](https://laravel.com/docs/5.2/), en el proyecto puedes encontrar  un archivo sql con el nombre backups.sql el cúal antes de poder usar la aplicación debes de importa. Luego de lo anterior debes de instalar laravel para tu proyecto con el siguiente comando.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+```sh
+$ composer install 
+```
 
-## Official Documentation
+Habiendo realizado las anteriores tareas debes de ir al archivo .env y configurar tu conexión de base de datos si todo esta correctamente puedes escribir el siguiente comando para ejecutar tu aplicación.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+```sh
+$ php artisan serve
+```
 
-## Contributing
+## Bower
+Como se ha mencionado en clases [bower](http://bower.io/), es un gestor de dependencias del lado del Front-end, el cual nos facilitará dicha gestión para instalar las dependencias solo debemos escribir en terminal el siguiente comando.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+```sh
+$ bower install 
+```
 
-## Security Vulnerabilities
+## Tareas Automatizadas
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+Dicho proyecto contamos con [Grunt](http://gruntjs.com/), un automatizador de tareas el cual nos permite recargar el navegardor cuando hagamos un cambio en la app así como con los archivos less compilarlos a css. La instalación es muy sencilla debemos contar con [Node](https://nodejs.org/en/) instalado en nuestro ordenar y ejecutar en el directorio de nuestro proyecto el siguiente comando.
 
-## License
+```sh
+$ npm install 
+```
+luego de haber reaizado las instalaciones de las dependencias no tenemos más que ejecutar grunt con el siguiente comando 
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+```sh
+$ grunt
+```
+
+
