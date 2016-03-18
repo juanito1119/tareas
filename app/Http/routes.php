@@ -28,7 +28,10 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     
+    Route::get('/','Backend\TareaController@index');
 	Route::get('tarea','Backend\TareaController@index');
+	Route::get('tarea/nuevo','Backend\TareaController@nuevo');
+	Route::post('tarea/post','Backend\TareaController@post');
 	Route::get('tarea/edit/{id}','Backend\TareaController@edit');
 	Route::get('tarea/delete/{id}','Backend\TareaController@delete');
 

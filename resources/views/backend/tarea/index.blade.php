@@ -12,10 +12,10 @@
   <table class="datatables table table-hover table-bordered" data-paging="true" data-filtering="true" data-sorting="true">
     <thead>
       <tr>
-        <th data-type="number">{{ trans('global.id') }}</th>
+        <th>{{ trans('global.id') }}</th>
         <th >{{ trans('global.name') }}</th>
-        <th data-breakpoints="xs sm">{{ trans('global.description') }}</th>
-        <th data-breakpoints="xs">{{ trans('global.action') }}</th>
+        <th>{{ trans('global.description') }}</th>
+        <th>{{ trans('global.action') }}</th>
       </tr>
     </thead>
     <tbody>
@@ -32,12 +32,12 @@
     	@if( count($data) > 0 )
     		@foreach( $data as $item )
     			<tr>
-    				<td data-type="number">{{ $item->id }}</td>
+    				<td>{{ $item->id }}</td>
     				<td>{{ $item->name }}</td>
     				<td>{{ $item->description }}</td>
-    				<td>
-    					<a href="{{ url('tarea/edit/'.$item->id)}}"><i class="glyphicon glyphicon-edit"></i></a>
-    					<a href="{{ url('tarea/delete/'.$item->id)}}"><i class="glyphicon glyphicon-trash"></i></a>
+    				<td class="text-center">
+    					<a href="{{ url('tarea/edit/'.$item->id)}}"><i class="fa fa-pencil"></i></a>
+    					<a href="{{ url('tarea/delete/'.$item->id)}}" data-confirm-title="Eliminar" data-confirm-content="Desea eliminar el código {{ $item->id }}"><i class="fa fa-trash"></i></a>
     				</td>
     			</tr>
     		@endforeach
@@ -51,7 +51,22 @@
 </div>
 <script type="text/javascript">
     $(document).on('ready', function(){
-        $('table.datatables').DataTable();
+        $('table.datatables').DataTable({
+            columnDefs: [ 
+                {
+                    searchable: true,
+                    orderable: true,
+                    targets: 'all'
+                }
+            ],
+            order: [[ 0, "ASC" ]]
+        });
+
+        $("table.datatables tbody a").popConfirm({
+            yesBtn: "Si",
+            noBtn: "No",
+            placement: 'left'
+        });
     });
 </script>
 @endsection

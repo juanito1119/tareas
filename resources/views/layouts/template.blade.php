@@ -9,12 +9,18 @@
 
     <!-- jquery -->
     <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}" type="text/javascript"></script>
+    <!-- font-awesome -->
+    <link href="{{ asset('bower_components/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <!-- datatables -->
-    <link href="{{ asset('bower_components/datatables/media/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet">
     <script src="{{ asset('bower_components/datatables/media/js/jquery.dataTables.min.js')}}" type="text/javascript"></script>
+    <!-- popconfirm -->
+    <script src="{{ asset('bower_components/popconfirm/jquery.popconfirm.js') }}" type="text/javascript"></script>
+    <!-- style app-->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,28 +47,8 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Home</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li><a href="#">Separated link</a></li>
-              </ul>
-            </li>
+            <li class="active"><a href="{{ url('tarea' )}}">Tareas <span class="sr-only">(current)</span></a></li>
+            <li class=""><a href="{{ url('tarea/nuevo' )}}">Nueva Tareas <span class="sr-only">(current)</span></a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

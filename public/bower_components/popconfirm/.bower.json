@@ -1,0 +1,32 @@
+{
+  "name": "popconfirm",
+  "description": "A simple action confirmation plugin for jQuery based on Twitter Bootstrap Popover",
+  "main": "jquery.popconfirm.js",
+  "keywords": [
+    "bootstrap",
+    "confirmation"
+  ],
+  "authors": [
+    "Anael Favre <anael.favre@gmail.com>"
+  ],
+  "license": "WTFPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/Ifnot/PopConfirm",
+  "version": "0.4.4",
+  "_release": "0.4.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.4.4",
+    "commit": "c258e8c06f9291ed4d209177a0a434c2862d05bc"
+  },
+  "_source": "https://github.com/Ifnot/PopConfirm.git",
+  "_target": "~0.4.4",
+  "_originalSource": "https://github.com/Ifnot/PopConfirm.git",
+  "_direct": true
+}

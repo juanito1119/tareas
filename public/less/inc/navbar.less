@@ -1,0 +1,33 @@
+.navbar-default {
+	background-color: @color-navbar;
+	.navbar-brand {
+		font-weight: 200;
+		color:@color-write !important;
+		&:hover{
+			color:@color-write;
+		}
+	}
+	.navbar-nav {
+		li {
+			a {
+				color:@color-write;
+				font-weight: 200;
+				&:hover {
+					color:@color-write;
+				}
+
+			}
+			&.active{
+				a {
+					color:@color-navbar;
+					background-color: @color-write;
+					&:hover{
+						color:@color-navbar;
+						background-color: @color-write;
+					}					
+				}
+
+			}
+		}
+	}
+}

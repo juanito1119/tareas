@@ -26,6 +26,21 @@ class TareaController extends Controller
 		return view('backend.tarea.index',$data);
 	}
 
+	protected function nuevo()
+	{
+		return view('backend.tarea.nuevo');
+	}
+
+	protected function post()
+	{
+		$data = array(
+			'name' 			=> request()->input('name'),
+			'description' 	=> request()->input('description')
+		);
+		Tarea::firstCreate($data);
+		return redirect('tarea');
+	}
+
 	protected function edit($id)
 	{
 		$data = array(
@@ -39,7 +54,8 @@ class TareaController extends Controller
 	protected function delete($id)
 	{
 		Carmen::where('id',$id)->delete();
-		echo 'Se elimino el registro '.$id;
+		$data['id'] = $id;
+		return view('backend.tarea.delete', $data);
 	}
 
 }
