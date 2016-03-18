@@ -12,10 +12,9 @@
     <!-- Bootstrap -->
     <link href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
-    <!-- footable -->
-    <link href="{{ asset('bower_components/footable/compiled/footable.bootstrap.min.css') }}" rel="stylesheet">
-    <script src="{{ asset('bower_components/footable/compiled/footable.core.min.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('bower_components/footable/compiled/footable.min.js') }}" type="text/javascript"></script>
+    <!-- datatables -->
+    <link href="{{ asset('bower_components/datatables/media/css/dataTables.bootstrap.min.css') }}" rel="stylesheet">
+    <script src="{{ asset('bower_components/datatables/media/js/jquery.dataTables.min.js')}}" type="text/javascript"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

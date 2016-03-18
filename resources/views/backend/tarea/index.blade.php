@@ -9,7 +9,7 @@
 </div>
 
 <div class="col-lg-12">
-  <table class="footable table table-hover table-bordered" data-paging="true" data-filtering="true" data-sorting="true">
+  <table class="datatables table table-hover table-bordered" data-paging="true" data-filtering="true" data-sorting="true">
     <thead>
       <tr>
         <th data-type="number">{{ trans('global.id') }}</th>
@@ -49,5 +49,9 @@
     </tbody>
   </table>
 </div>
-
+<script type="text/javascript">
+    $(document).on('ready', function(){
+        $('table.datatables').DataTable();
+    });
+</script>
 @endsection
